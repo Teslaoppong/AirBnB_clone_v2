@@ -1,10 +1,15 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # sets up my web servers for the deployment of web_static
 
 echo -e "\e[1;32m START\e[0m"
 
 #--Updating the packages
 sudo apt-get -y update
+=======
+# This Bash script that sets up web servers for the deployment of web_static
+sudo apt-get update
+>>>>>>> 36d13a52715d4546610c45da493c766ab08e732a
 sudo apt-get -y install nginx
 echo -e "\e[1;32m Packages updated\e[0m"
 echo
@@ -20,7 +25,7 @@ echo -e "\e[1;32m directories created"
 echo
 
 #--adds test string
-echo "<h1>Welcome to www.smartcodez.tech</h1>" > /data/web_static/releases/test/index.html
+echo "<h1>Welcome to www.beta-scribbles.tech</h1>" > /data/web_static/releases/test/index.html
 echo -e "\e[1;32m Test string added\e[0m"
 echo
 

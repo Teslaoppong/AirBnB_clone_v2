@@ -59,6 +59,7 @@ def do_deploy(archive_path):
     return success
 
 
+<<<<<<< HEAD
 def deploy():
     """Archives and deploys the static files to the host servers.
     """
@@ -70,6 +71,11 @@ def do_clean(number=0):
     """Deletes out-of-date archives of the static files.
     Args:
         number (Any): The number of archives to keep.
+=======
+    If the number is 0 or 1, keeps only the most recent archive. If
+    number is 2, keeps the most and second-most recent archives,
+    etc.
+>>>>>>> 36d13a52715d4546610c45da493c766ab08e732a
     """
     archives = os.listdir('versions/')
     archives.sort(reverse=True)
